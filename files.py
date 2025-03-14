@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import openpyxl
 
 st.subheader('Uploading the csv File')
 df = st.file_uploader('Upload the csv file:',type=['csv','xlsx'])
@@ -10,11 +9,11 @@ df = pd.read_csv('February.csv')
 st.table(df)
 df = pd.read_csv('April.csv')
 st.table(df)
-# df = pd.read_excel('PowerBIData.xlsx')
-# if df is not None:
-#  st.table(df.head())# head shows first 5 data as a demo
 df = pd.read_excel('PowerBIData.xlsx')
-st.table(df)#directly uploading
+if df is not None:
+ st.table(df.head())# head shows first 5 data as a demo
+# df = pd.read_excel('PowerBIData.xlsx')
+# st.table(df)#directly uploading
 
 st.subheader("Working with Images directly")
 st.image("Please stayy.jpeg")# in the path '\' is used we have to replace it with '/'
