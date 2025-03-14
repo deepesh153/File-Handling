@@ -6,11 +6,12 @@ csv_file = st.file_uploader('Upload the csv file:',type=['csv'])
 
 st.subheader('Loading the csv File')
 if csv_file is not None:
- st.table(csv_file)
-# df = pd.read_csv('February.csv')
-# st.table(df)
-# df = pd.read_csv('April.csv')
-# st.table(df)
+ df = pd.read_csv(csv_file)
+ st.table(df)
+df = pd.read_csv('February.csv')
+st.table(df)
+df = pd.read_csv('April.csv')
+st.table(df)
 
 st.subheader('Uploading the excel File')
 df = st.file_uploader('Upload the excel file:',type=['xlsx'])
