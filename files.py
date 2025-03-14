@@ -12,8 +12,8 @@ st.table(df)
 # df = pd.read_excel('PowerBIData.xlsx')
 # if df is not None:
 #  st.table(df.head())# head shows first 5 data as a demo
-# df = pd.read_excel('PowerBIData.xlsx')
-# st.table(df)#directly uploading
+df = pd.read_excel('PowerBIData.xlsx')
+st.table(df)#directly uploading
 
 st.subheader("Working with Images directly")
 st.image("Please stayy.jpeg")# in the path '\' is used we have to replace it with '/'
