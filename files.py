@@ -8,12 +8,11 @@ st.subheader('Loading the csv File')
 df = pd.read_csv(csv_file)
 if df is not None:
  st.table(df)
-else :
- st.markdown('NONE')
-df = pd.read_csv('February.csv')
-st.table(df)
-df = pd.read_csv('April.csv')
-st.table(df)
+ 
+# df = pd.read_csv('February.csv')
+# st.table(df)
+# df = pd.read_csv('April.csv')
+# st.table(df)
 
 st.subheader('Uploading the excel File')
 df = st.file_uploader('Upload the excel file:',type=['xlsx'])
