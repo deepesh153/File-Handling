@@ -5,9 +5,9 @@ st.subheader('Uploading the csv File')
 csv_file = st.file_uploader('Upload the csv file:',type=['csv'])
 
 st.subheader('Loading the csv File')
-if csv_file is not None:
- df = pd.read_csv(csv_file)
- st.table(df)
+# if csv_file is not None:
+#  df = pd.read_csv(csv_file)
+#  st.table(df)
 df = pd.read_csv('February.csv')
 st.table(df)
 df = pd.read_csv('April.csv')
