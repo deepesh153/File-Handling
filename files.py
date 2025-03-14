@@ -2,16 +2,20 @@ import streamlit as st
 import pandas as pd
 
 st.subheader('Uploading the csv File')
-df = st.file_uploader('Upload the csv file:',type=['csv','xlsx'])
+df = st.file_uploader('Upload the csv file:',type=['csv'])
 
 st.subheader('Loading the csv File')
 df = pd.read_csv('February.csv')
 st.table(df)
 df = pd.read_csv('April.csv')
 st.table(df)
-df = pd.read_excel('PowerBIData.xlsx')
-if df is not None:
- st.table(df.head())# head shows first 5 data as a demo
+
+st.subheader('Uploading the excel File')
+df = st.file_uploader('Upload the excel file:',type=['csv'])
+st.subheader('Loading the excel File')
+excel_file = pd.read_excel('PowerBIData.xlsx')
+if excel_file is not None:
+ st.table(excel_file.head())# head shows first 5 data as a demo
 df = pd.read_excel('PowerBIData.xlsx')
 st.table(df)#directly uploading
 
