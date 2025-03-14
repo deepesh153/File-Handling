@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import openpyxl
 
 st.subheader('Uploading the csv File')
 df = st.file_uploader('Upload the csv file:',type=['csv','xlsx'])
