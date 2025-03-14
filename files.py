@@ -11,7 +11,7 @@ df = pd.read_csv('April.csv')
 st.table(df)
 
 st.subheader('Uploading the excel File')
-df = st.file_uploader('Upload the excel file:',type=['csv'])
+df = st.file_uploader('Upload the excel file:',type=['xlsx'])
 st.subheader('Loading the excel File')
 excel_file = pd.read_excel('PowerBIData.xlsx')
 if excel_file is not None:
