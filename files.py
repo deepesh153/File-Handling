@@ -9,9 +9,9 @@ df = pd.read_csv('February.csv')
 st.table(df)
 df = pd.read_csv('April.csv')
 st.table(df)
-df = pd.read_excel('PowerBIData.xlsx')
-if df is not None:
- st.table(df.head())# head shows first 5 data as a demo
+# df = pd.read_excel('PowerBIData.xlsx')
+# if df is not None:
+#  st.table(df.head())# head shows first 5 data as a demo
 # df = pd.read_excel('PowerBIData.xlsx')
 # st.table(df)#directly uploading
 
