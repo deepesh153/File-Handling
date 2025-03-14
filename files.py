@@ -6,7 +6,7 @@ csv_file = st.file_uploader('Upload the csv file:',type=['csv'])
 
 st.subheader('Loading the csv File')
 if csv_file is not None:
- st.table(df)
+ st.table(csv_file)
 # df = pd.read_csv('February.csv')
 # st.table(df)
 # df = pd.read_csv('April.csv')
