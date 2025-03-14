@@ -2,10 +2,11 @@ import streamlit as st
 import pandas as pd
 
 st.subheader('Uploading the csv File')
-df = st.file_uploader('Upload the csv file:',type=['csv'])
+csv_file = st.file_uploader('Upload the csv file:',type=['csv'])
 
 st.subheader('Loading the csv File')
-st.table(df)
+if csv_file is not None:
+ st.table(df)
 # df = pd.read_csv('February.csv')
 # st.table(df)
 # df = pd.read_csv('April.csv')
